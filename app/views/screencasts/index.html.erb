@@ -1,0 +1,7 @@
+<h1>Screencasts#index</h1>
+
+<ul>
+  <% @screencasts.each do |screencast| %>
+    <li><%= link_to screencast.title, screencast_path(screencast) %></li>
+  <% end %>
+</ul>
