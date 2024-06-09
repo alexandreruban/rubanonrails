@@ -2,4 +2,4 @@ kamal:
   title: Deploy your Rails application with Kamal
   description: Kamal is a deployment tool for Ruby on Rails applications based on Docker. It will allow you to deploy your Rails application with ease.
   slug: deployment-with-kamal
-  video_url: TODO
+  video_id: 903834205
