@@ -10,7 +10,7 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
+  <%= tag.body class: @body_class do %>
     <%= yield %>
-  </body>
+  <% end %>
 </html>

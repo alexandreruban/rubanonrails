@@ -1,0 +1,24 @@
+:root {
+  --font-sans: "Inter", system-ui, sans-serif;
+
+  --line-height-header: 1.1;
+  --line-height-body: 1.6;
+
+  --font-size-base: clamp(1rem, calc(0.7rem + 0.5vw), 1.25rem);
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+
+  --color-text-header: oklch(28% 0.005 75);
+  --color-text-body: oklch(35% 0.005 75);
+  --color-text-subtle: oklch(50% 0.005 75);
+
+  --color-surface: oklch(99% 0.0044 75);
+  --color-bg-dark: oklch(99% 0 0);
+  --color-bg: white;
+
+  --font-weight-header: 700;
+  --border: 1px solid oklch(90% 0.005 75);
+}

@@ -1,0 +1,20 @@
+html {
+  font-size: var(--font-size-base);
+}
+
+body {
+  font-family: var(--font-sans);
+  line-height: var(--line-height-body);
+  color: var(--color-text-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-text-header);
+  line-height: var(--line-height-header);
+  font-weight: var(--font-weight-header);
+}

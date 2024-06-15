@@ -1,7 +1,29 @@
-<h1>Screencasts#index</h1>
+<% @body_class = "screencasts" %>
 
-<ul>
+<header class="screencasts__hero">
+  <h1 class="screencasts__hero-title">
+    Supercharge your Ruby on Rails skills
+  </h1>
+  <p class="screencasts__hero-description">
+    There are so many exciting things happening in the Ruby on Rails world!
+    Let's explore them together with homemade screencasts.
+  </p>
+</header>
+
+<main class="screencasts__list">
   <% @screencasts.each do |screencast| %>
-    <li><%= link_to screencast.title, screencast_path(screencast) %></li>
+    <%= link_to screencast_path(screencast), class: "block link-unstyled" do %>
+      <article class="screencasts__item">
+        <h2 class="screencasts__item-title">
+          <%= screencast.title %>
+        </h2>
+        <p class="screencasts__item-description">
+          <%= screencast.description %>
+        </p>
+        <small class="screencasts__item-date">
+          <%= l screencast.created_at.to_date, format: :long %>
+        </small>
+      </article>
+    <% end %>
   <% end %>
-</ul>
+</main>
