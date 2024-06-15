@@ -1,5 +1,6 @@
 html {
   font-size: var(--font-size-base);
+  background-color: var(--color-surface);
 }
 
 body {

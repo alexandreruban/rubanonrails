@@ -1,3 +1,23 @@
-<%= screencast_video(@screencast) %>
-<h1><%= @screencast.title %></h1>
-<p>Find me in app/views/screencasts/show.html.erb</p>
+<% @body_class = "screencast" %>
+
+<header class="screencast__header">
+  <%= link_to root_path, class: "screencast__header-back" do %>
+    <%= image_tag "icons/arrow_left.svg", role: "presentation", width: 20, height: 20 %>
+  <% end %>
+</header>
+
+<main class="screencast__main">
+  <%= screencast_video @screencast, class: "screencast__video" %>
+
+  <div class="screencast__text">
+    <h1 class="screencast__title">
+      <%= @screencast.title %>
+    </h1>
+    <p class="screencast__description">
+      <%= @screencast.description %>
+    </p>
+    <small class="screencast__date">
+      <%= l @screencast.created_at.to_date, format: :long %>
+    </small>
+  </div>
+</main>
